@@ -9,3 +9,7 @@ MongoDB Community https://docs.mongodb.com/manual/tutorial/getting-started/ </br
 Postman https://www.getpostman.com/ </br>
 Mongoose </br>
 Babel </br>
+
+
+start Mongo: 
+mongod 
