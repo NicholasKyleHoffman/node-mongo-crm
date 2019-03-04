@@ -1,0 +1,22 @@
+{
+  "name": "crm",
+  "version": "1.0.0",
+  "description": "Node, Express, and MongoDB CRM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicholasKyleHoffman/node-mongo-crm.git"
+  },
+  "author": "NicholasKyleHoffman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NicholasKyleHoffman/node-mongo-crm/issues"
+  },
+  "homepage": "https://github.com/NicholasKyleHoffman/node-mongo-crm#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
