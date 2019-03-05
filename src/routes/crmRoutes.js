@@ -1,3 +1,5 @@
+import { addNewContact } from '../controllers/crmController' 
+
 // Define API endpoints in crmRoutes.js (this)
 
 const routes = (app) => {
@@ -13,8 +15,8 @@ const routes = (app) => {
 		res.send('GET request successful :p');
 	})
 
-	.post((req, res) =>
-	res.send('POST request exitoso :)'));
+	// Reworked using addNewContact controller logic
+	.post(addNewContact);
 
 	app.route('/contact/:contactId')
 	.put((req, res) => 
