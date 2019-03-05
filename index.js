@@ -19,6 +19,10 @@ app.use(bodyParser.json());
 
 routes(app);
 
+// serving static files
+// from /public folder or public/images
+app.use(express.static('public/images'));
+
 // ES6 syntax = `backtick(left of number 1, far left) ${enter something here}`
 app.get('/', (req, res) =>
 	res.send(`Node & express server running on port ${PORT}`)
