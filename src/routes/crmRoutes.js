@@ -31,8 +31,7 @@ const routes = (app) => {
 	.put(updateContact)
 
 	// DELETE request endpoint
-	.delete((req, res) =>
-	res.send('DELETE request exitoso'));
+	.delete(deleteContact);
 }
 
 // ES6 syntax
