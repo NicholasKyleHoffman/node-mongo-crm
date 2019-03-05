@@ -1,4 +1,4 @@
-import { addNewContact } from '../controllers/crmController' 
+import { addNewContact, getContacts } from '../controllers/crmController' 
 
 // Define API endpoints in crmRoutes.js (this)
 
@@ -11,11 +11,10 @@ const routes = (app) => {
 		console.log(`Request type: ${req.method}`)
 		// exit middleware & move onto next function
 		next();
-	}, (req, res, next) => {
-		res.send('GET request successful :p');
-	})
+	}, getContacts)
 
 	// Reworked using addNewContact controller logic
+	// POST endpoint
 	.post(addNewContact);
 
 	app.route('/contact/:contactId')

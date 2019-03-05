@@ -17,3 +17,17 @@ export const addNewContact = (req, res) => {
 	});
 };
 
+// some req/res -> either errors or 
+// responds & sends json data from contact object
+export const getContacts = (req, res) => {
+	Contact.find({}, (error, contact) => {
+		if (err) {
+			res.send(err);
+		}
+		res.json(contact);
+	});
+};
+
+
+
+
