@@ -11,5 +11,10 @@ Mongoose </br>
 Babel: babel-preset-es2015 babel-preset-stage-0 https://babeljs.io/docs/en/plugins </br>
 Nodemon (use nodemon instead of node in CLI - nodemon monitors changes in your code & restarts your server) https://nodemon.io/ </br>
 
-start Mongo: 
-mongod 
+Start Mongo: 
+mongod </br>
+
+Start app:
+npm start</br>
+
+Open the following in browser: localhost://4200
