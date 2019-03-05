@@ -3,6 +3,7 @@ import {
 	getContacts, 
 	getContactWithID, 
 	updateContact,
+	deleteContact,
 } from '../controllers/crmController'; 
 
 // Define API endpoints in crmRoutes.js (this)

@@ -28,7 +28,7 @@ export const getContacts = (req, res) => {
 	});
 };
 
-// findById is built in with mongoose
+// findById() is built in with mongoose
 // req.params.contactId => returns 
 // load Contact (collection) -> findById(request)
 // err response sends err
@@ -42,12 +42,22 @@ export const getContactWithID = (req, res) => {
 	});		
 }
 
-// using built in findOneAndUpdate 
+// using built in mongoose findOneAndUpdate() 
 export const updateContact = (req, res) => {
 	Contact.findOneAndUpdate({ _id: req.params.contactId }, req.body, { new: true }, (err, contact) => {
 		if (err) {
 			res.send(err);
 		}
 		res.json(contact);		
+	});
+}
+
+// DELETE uses mongoose's remove()
+export const deleteContact = (req, res) => {
+	Contact.remove({ _id: req.params.contactId }, (err, contact) => {
+		if (err) {
+			res.send(err);
+		}
+		res.json({ message: 'Successfully deleted contact (no error)!'});		
 	});
 }
