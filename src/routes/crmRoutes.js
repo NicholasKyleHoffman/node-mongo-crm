@@ -1,4 +1,4 @@
-import { addNewContact, getContacts } from '../controllers/crmController' 
+import { addNewContact, getContacts, getContactWithID } from '../controllers/crmController' 
 
 // Define API endpoints in crmRoutes.js (this)
 
@@ -13,14 +13,19 @@ const routes = (app) => {
 		next();
 	}, getContacts)
 
-	// Reworked using addNewContact controller logic
 	// POST endpoint
+	// Reworked using addNewContact controller logic
 	.post(addNewContact);
 
+	// GET SPECIFIC contact endpoint
 	app.route('/contact/:contactId')
+	.get(getContactWithID)
+
+	// PUT request endpoint
 	.put((req, res) => 
 	res.send('PUT request successful'))
 
+	// DELETE request endpoint
 	.delete((req, res) =>
 	res.send('DELETE request exitoso'));
 }
