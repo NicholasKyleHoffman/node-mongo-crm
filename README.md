@@ -20,26 +20,25 @@ MongoDB Community: https://docs.mongodb.com/manual/tutorial/getting-started/ </b
 
 ====================================
 
-<strong>CLI Commands:</strong>
+<strong>CLI Commands:</strong></br>
 
 Have 3 Terminals Open:</br>
 
-Console #1: navigate to C://data/db
-Start Mongo: 
-mongod </br>
+Console #1: navigate to 'C://data/db'</br>
+Start Mongo: 'mongod' </br>
 
-Console #2: navigate to 'node-mongo-crm' root dir
-Start 'node-mongo-crm' App:
-npm start </br>
+Console #2: navigate to 'node-mongo-crm' root dir</br>
+Start 'node-mongo-crm' App: 'npm start' </br>
 
-Console #3 (optional): navigate to 'node-mongo-crm' root dir
-Git status / push / pull
+Console #3 (optional): navigate to 'node-mongo-crm' root dir </br>
+Git status / push / pull </br>
 
-Have Robomongo (Studio 3T connected to mongodb instance - verify correct port from Console #1)
-Have Postman Open for HTTP requests
-Have MongoDB Compass open (for viewing data)
+Have Robomongo (Studio 3T connected to mongodb instance - verify correct port from Console #1)</br>
+Have Postman Open for HTTP requests</br>
+Have MongoDB Compass open (for viewing data)</br>
 
-<strong>Navigate To:</strong>
-Open the following in browser: localhost://4200
-Note: you will see "Node & express server running on port 4200" if everything worked. Try navigating to localhost://4200 & note changes on Console #2!
+<strong>Navigate To:</strong></br>
+Open the following in browser: localhost://4200</br>
+Note: you will see "Node & express server running on port 4200" if everything worked.</br>
+ Try navigating to localhost://4200 & note changes on Console #2!</br>
 
