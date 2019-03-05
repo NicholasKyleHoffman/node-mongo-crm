@@ -13,7 +13,7 @@ Body-parser: https://www.npmjs.com/package/body-parser</br>
 MongoDB Community https://docs.mongodb.com/manual/tutorial/getting-started/</br>
 
 Postman - this is used in conjunction with HTTP Requests GET POST PUT DELETE - './src/routes/crmRoutes.js'</br> 
-https://www.getpostman.com/ </br>
+https://www.getpostman.com/ || https://learning.getpostman.com/docs/postman/collections/creating_collections/#how-to-create-collections</br>
 
 Robomongo/Robo Studio 3T - this tool is used to CONNECT to Mongodb (after running mongod in CLI):</br>
 Note: you must set a connection (name, verify that it's on the port that output in CLI)</br>
@@ -68,3 +68,13 @@ have run mongod command <strong>BEFORE</strong>connecting to your port in Robomo
 create collection in postman specifically for this app - localhost://4200 is default. ENSURE for POST & PUT <br>
 routes/endpoints you select "x-www-form-urlencoded" under Body radio button. This is for json data. <br>
 have fun :)</br>
+
+
+===========================================================
+
+<strong>Next Steps:</strong></br>
+* Create different endpoints for different data.</br> 
+* Hook up to form with fields - contact form with submission via nodemailer.</br>
+* Incorporate https://koajs.com/#introduction </br>
+* Try https://loopback.io/getting-started/</br>
+* Try https://swagger.io/solutions/api-design/</br>
