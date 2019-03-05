@@ -14,5 +14,7 @@ const routes = (app) => {
 
 	.delete((req, res) =>
 	res.send('DELETE request exitoso'));
-
 }
+
+// ES6 syntax
+export default routes;

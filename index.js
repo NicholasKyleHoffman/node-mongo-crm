@@ -1,9 +1,12 @@
 import express from 'express';
+import routes from './src/routes/crmRoutes';
 
 const app = express();
 const PORT = 4200;
 
-// es6 syntax = `backtick ${enter something here}`
+routes(app);
+
+// ES6 syntax = `backtick(left of number 1, far left) ${enter something here}`
 app.get('/', (req, res) =>
 	res.send(`Node & express server running on port ${PORT}`)
 );
